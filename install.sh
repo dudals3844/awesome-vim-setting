@@ -162,7 +162,7 @@ rm coc_install.vim
 
 echo "Apply CoC Settings ..."
 cp ${PWD}/coc-settings.json ${VIM_DIR}/coc-settings.json
-PYTHONPATH=$(which python3)
+PYTHONPATH=$(which python)
 echo "PYTHON3 BINARY: ${PYTHONPATH}"
 ESCAPED="${PYTHONPATH//\//\\/}"
 ${SED} -i "s/\"python.pythonPath\": \"python3\"/\"python.pythonPath\": \"${ESCAPED}\"/" ${VIM_DIR}/coc-settings.json
