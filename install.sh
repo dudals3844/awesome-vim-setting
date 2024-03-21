@@ -174,4 +174,6 @@ mkdir -p ${HOME}/.config/coc/ultisnips
 cp ${PWD}/snippets/* ${HOME}/.config/coc/ultisnips/
 echo ""
 
+echo "split_before_named_assigns = True" >> /root/.vim/bundle/yapf/.style.yapf
+
 echo "awesome-vim-setting is finished!"
