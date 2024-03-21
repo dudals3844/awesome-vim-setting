@@ -29,5 +29,8 @@
             "filetypes": ["dockerfile"],
             "args": ["--stdio"]
         }
+    },
+    "yaml.schemas": {
+        "kubernetes": "/*.yaml"
     }
 }

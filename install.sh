@@ -155,7 +155,7 @@ echo ""
 
 
 echo "Install CoC Language Servers ..."
-echo ':CocInstall -sync coc-snippets coc-pyright coc-json coc-java coc-tsserver coc-html coc-css coc-vetur coc-cmake|q' > coc_install.vim
+echo ':CocInstall -sync coc-snippets coc-pyright coc-json coc-java coc-tsserver coc-html coc-css coc-vetur coc-yaml coc-cmake|q' > coc_install.vim
 vim -s coc_install.vim
 rm coc_install.vim
 
