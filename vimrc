@@ -143,7 +143,11 @@ call vundle#end()  " required
 let mapleader = ',' " <leader> is ',' key
 
 " ===AutoSave===
-let g:auto_save = 1
+let g:auto_save = 0
+augroup ft_python
+  au!
+  au FileType python let b:auto_save = 1
+augroup END
 let g:auto_save_events = ["InsertLeave", "TextChanged"]
 
 " ===YAPF===
