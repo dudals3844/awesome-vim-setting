@@ -134,10 +134,17 @@ Plugin 'preservim/tagbar'                     " C/C++ code navigation
 " autocomplete
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
+" autosave
+Plugin '907th/vim-auto-save'
+
 call vundle#end()  " required
 
 
 let mapleader = ',' " <leader> is ',' key
+
+" ===AutoSave===
+let g:auto_save = 1
+let g:auto_save_events = ["InsertLeave", "TextChanged"]
 
 " ===YAPF===
 map <C-Y> :call yapf#YAPF()<cr>
