@@ -168,6 +168,15 @@ ESCAPED="${PYTHONPATH//\//\\/}"
 ${SED} -i "s/\"python.pythonPath\": \"python3\"/\"python.pythonPath\": \"${ESCAPED}\"/" ${VIM_DIR}/coc-settings.json
 echo ""
 
+# Tmux Install
+echo "Install tmux ..."
+if [[ ${OS_TYPE} == "UBUNTU" ]]; then
+    ${INSTALLER} install ${INSTALLER_OPTION} tmux
+elif [[ ${OS_TYPE} == "MAC" ]]; then
+    ${INSTALLER} install ${INSTALLER_OPTION} tmux
+fi
+echo ""
+
 
 echo "Apply CoC Python Snippets ..."
 mkdir -p ${HOME}/.config/coc/ultisnips
