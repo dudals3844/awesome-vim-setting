@@ -141,6 +141,9 @@ Plugin '907th/vim-auto-save'
 Plugin 'jpalardy/vim-slime'
 Plugin 'hanschen/vim-ipython-cell'
 
+" git
+Plugin 'tpope/vim-fugitive'
+
 call vundle#end()  " required
 
 
