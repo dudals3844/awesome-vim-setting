@@ -122,7 +122,7 @@ echo ""
 
 
 echo "Install Language Server Dependencies ..."
-${PIP} install -q autopep8 flake8 yapf              # Python Language Server dependency
+${PIP} install -q autopep8 flake8 yapf git+https://github.com/psf/black # Python Language Server dependency
 ${INSTALLER} install ${INSTALLER_OPTION} ccls       # C/C++ langauge server dependency
 npm install -g bash-language-server                 # bash langauge server dependency
 npm install -g eslint eslint-plugin-vue -D          # vue langauge server dependency
