@@ -329,7 +329,7 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 
 command! Run write | !clear; python %
-
+command Black %!black -q
 "------------------------------------------------------------------------------
 " slime configuration 
 "------------------------------------------------------------------------------
