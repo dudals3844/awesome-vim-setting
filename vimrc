@@ -144,6 +144,9 @@ Plugin 'hanschen/vim-ipython-cell'
 " git
 Plugin 'tpope/vim-fugitive'
 
+" multi cursur
+Plugin 'terryma/vim-multiple-cursors'
+
 call vundle#end()  " required
 
 
@@ -398,6 +401,15 @@ nmap <F10> :IPythonCellInsertBelow<CR>a
 " also make <F9> and <F10> work in insert mode
 imap <F9> <C-o>:IPythonCellInsertAbove<CR>
 imap <F10> <C-o>:IPythonCellInsertBelow<CR>
+
+" vim-multiple-cursor
+let g:multi_cursor_use_default_mapping=0
+" Default mapping
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+
 
 
 " https://github.com/cpm0722/awesome-vim-setting/tree/master?tab=readme-ov-file
