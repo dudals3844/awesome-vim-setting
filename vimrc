@@ -150,6 +150,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " hightlight
 Plugin 'sakshamgupta05/vim-todo-highlight'
 
+" python doscstring
+Plugin 'pixelneo/vim-python-docstring'
+
 call vundle#end()  " required
 
 
