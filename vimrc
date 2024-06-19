@@ -147,6 +147,9 @@ Plugin 'tpope/vim-fugitive'
 " multi cursur
 Plugin 'terryma/vim-multiple-cursors'
 
+" hightlight
+Plugin 'sakshamgupta05/vim-todo-highlight'
+
 call vundle#end()  " required
 
 
