@@ -114,6 +114,9 @@ git clone https://github.com/cpm0722/awesome-vim-setting && cd awesome-vim-setti
     - `gd`: 함수의 definition으로 이동
     - `<SHIFT>k`: 함수의 prototype(header)를 확인
     - `<CTRL>u` / `<CTRL>d`: popup에서 scroll이 필요한 경우, 위/아래 scroll
+ 
+- 키워드 검색
+    - :vim foo **/*.js | copen
 
 ## Detail Settings
 - [detail-setting.md](detail-setting.md)
